@@ -1,0 +1,33 @@
+header .navbar-agric{
+    color: rgb(219, 219, 6);
+    font-size:35px;
+    
+
+}
+header .navbar-agric:hover{
+    color: rgba(7, 63, 63, 0.493);
+    background-color: rgb(228, 238, 219);
+    padding: 5px;
+    border-radius: 5px;
+
+
+}
+header .nav-item .nav-link{
+    color: rgb(121, 82, 10);
+    font-size: 25px;
+  
+}
+
+header .nav-item .nav-link:hover{
+    color: brown;
+    background-color: rgb(184, 169, 169) ;
+}
+header .dropdown-menu .dropdown-item{
+
+    color: rgb(233, 184, 22);
+}
+header .dropdown-menu .dropdown-item:hover{
+    color: rgb(96, 212, 212);
+    background-color: rgb(4, 20, 15);
+
+}

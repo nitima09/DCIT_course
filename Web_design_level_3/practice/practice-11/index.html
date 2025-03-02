@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        
+         *{
+            box-sizing: border-box;
+         }
+         .row::after{
+            content: '';
+            clear: both;
+            display: table;
+         }
+/* for tablet */
+@media only screen and (min-width:600px) {
+     .col-s-1 {width: 8.33%; }
+     .col-s-2 {width: 16.66%; }
+     .col-s-3 {width: 25%;}
+     .col-s-4 {width: 33.33%;}
+     .col-s-5 {width: 41.66%;}
+     .col-s-6 { width: 50%; }
+     .col-s-7 { width: 58.33%;}
+     .col-s-8 { width: 66.66%;  }
+     .col-s-9 { width: 75%;  }
+     .col-s-10 {width: 83.3%; }
+     .col-s-11 { width: 91.63%;}
+     .col-s-12 { width: 100%; }
+}
+  /* for mobile phones */
+        [class*="col-"]{
+           float: left;
+           padding: 15px;
+
+        }
+        /* for desktop */
+        @media only screen and (min-width:768px){
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10{width: 83.3%;}
+        .col-11 {width: 91.63%;}
+        .col-12 {width: 100%;}
+    }
+    .header{
+        background-color: rgb(112, 94, 126);
+        color: rgb(241, 218, 190);
+        padding: 15px;
+        text-align: center;
+    }
+    .footer{
+        background-color: rgb(91, 77, 104);
+        color:bisque;
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+ .aside{
+        background-color:rgb(175, 143, 143);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+ }
+ .menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ .menu ul li{
+padding: 8px;
+margin-bottom: 10px;
+background-color:rgb(175, 143, 143);
+color:azure;
+font-size: 20px;
+border-radius: 5px;
+text-align: center;
+
+ }
+ .menu ul li:hover{
+    color: #160202;
+    background-color:rgb(145, 110, 110);
+    border-radius: 5px;
+    
+    
+ }
+
+ .medle-view{
+    background-color:rgb(145, 110, 110) ;
+    color: rgb(224, 224, 230);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+
+ }
+ .text-class{
+    background-color:rgb(145, 110, 110);
+    color:white;
+    padding: 10px;
+
+ }
+ .table-1{
+    border: 1px solid rgb(232, 183, 7);
+    background-color:rgb(175, 143, 143);
+
+ }
+
+ .table-1 tr td{
+    border: 1px solid rgb(80, 30, 30);
+ }
+
+.list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.list ul li{
+    padding: 8px;
+margin-bottom: 10px;
+background-color:rgb(175, 143, 143);
+color:azure;
+font-size: 20px;
+border-radius: 5px;
+text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Canva</h1>
+    </div>
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <ul>
+                <li>Dhaka</li>
+                <li>Dinajpur</li>
+                <li>Barishal</li>
+                <li>Fani</li>
+            </ul>
+        </div>
+        <div class="col-6 col-s-9">
+            <h1 class="medle-view">From</h1>
+            <p class=" text-class">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic sit repellendus exercitationem quibusdam
+                nostrum cum deserunt, incidunt quaerat assumenda doloribus! Reprehenderit, corporis! Esse quas deserunt
+                dolorum! Minus nam ipsa cupiditate voluptate ipsam. Repudiandae optio velit totam voluptatibus esse
+                iusto quisquam ducimus possimus veniam dolores rem quos enim itaque ipsa cupiditate aut est nostrum
+                quaerat eos minima quam, placeat hic iste! Quaerat a dolores adipisci provident voluptate ducimus omnis
+                placeat veritatis quos dolor at, architecto quo dicta cupiditate sed! Eaque temporibus amet
+                reprehenderit laboriosam. Id tempore facere ad, quas mollitia, eius quo quam voluptas consectetur
+                possimus ipsum, inventore dicta nisi repellat!</p>
+
+        </div>
+        <div class="col-3 col-s-12 ">
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Where?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>When?</h2>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+<div class="row">
+    <div class="col-6 col-s-6 list">
+        <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+            <li>Lichi</li>
+            <li>Banana</li>
+        </ul>
+
+    </div>
+    <div class="col-6 col-s-6">
+     <table class="table-1">
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Salary</td>
+            <td>Company Name</td>
+        </tr>
+        <tr>
+            <td>232327</td>
+            <td>Nitima Roy</td>
+            <td>30000</td>
+            <td>RFL</td>
+        </tr>
+        <tr>
+            <td>343555</td>
+            <td>Promi Roy</td>
+            <td>40000</td>
+            <td>DCIT</td>
+        </tr>
+        <tr>
+            <td>214334</td>
+            <td>Labonno</td>
+            <td>50000</td>
+            <td>FOOD</td>
+        </tr>
+     </table>
+    </div>
+</div>
+
+
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .div1 {
+            border:2px solid blue ;
+            height:1200px;
+            width: 1000px;
+        }
+        .relative{
+            border: 2px solid red;
+            height: 300px;
+            width: 400px;
+            position: relative;
+            top: 30px;
+        }
+        .absolute{
+            border: 2px solid green;
+            height: 100px;
+            width: 200px;
+            position: absolute;
+            top: 50px;
+        }
+
+        .fixed {
+            border: 2px solid black;
+            height: 20px;
+            width: 20px;
+            position: fixed;
+  }
+  .sticky{
+    border: 2px solid navy;
+    height: 20px;
+    width: 20px;
+    position: sticky;
+  }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="relative">
+                <div class="absolute">
+                    <div class="fixed">
+
+                </div>
+
+            </div>
+        </div>
+
+            <div class="sticky"></div>
+
+
+    </div>
+    
+</body>
+
+</html>

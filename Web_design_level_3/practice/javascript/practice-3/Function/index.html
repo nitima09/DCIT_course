@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <p id="demo"></p>
+<p id="add"></p>
+<p id="sub"></p>
+<p id="divi"></p>
+    <script>
+        function multi(){
+            let a=15;
+            let b=20;
+           return a*b;
+
+        }
+        document.getElementById("demo").innerHTML= multi();
+
+        function addition(){
+            let x=20;
+            let y=10;
+            return x+y;
+        }
+document.getElementById("add").innerHTML = addition();
+
+
+function substraction(){
+            let x=20;
+            let y=10;
+            return x-y;
+        }
+document.getElementById("sub").innerHTML = substraction();
+
+
+function divition(){
+            let x=20;
+            let y=10;
+            return x/y;
+        }
+document.getElementById("divi").innerHTML = divition();
+    </script>
+</body>
+</html>

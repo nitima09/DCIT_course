@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="function"></p>
+    <p id="java"></p>
+    <p id="java1"></p>
+    <script>
+    //    function with parameter variable
+        function nitima(a,b){
+       return a*b;
+           }
+        let result= nitima(10,2);
+        document.getElementById("function").innerHTML=result;
+
+         //    function without parameter variable
+       function demo(){
+        let x=10;
+        let y=20;
+        return x*y;
+       }
+       document.getElementById("java").innerHTML=demo();
+    
+
+       function demo1(){
+        let num1=45;
+        num2=12;
+        return num1-num2;
+       }
+document.getElementById("java1").innerHTML=demo1();
+    </script>
+</body>
+</html>
